@@ -56,7 +56,7 @@ if __name__ == "__main__":
     y= np.array([0 for _ in range(360)])
     is_run = True
     
-    port = "/dev/cu.usbserial-0001"
+    port = "/dev/ttyUSB0"
     obj = PyLidar3.YdLidarG4(port)
     thread_data = Thread(target=data_fetch, args=(obj,), daemon=False)
     thread_data.start()

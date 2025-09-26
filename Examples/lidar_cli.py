@@ -4,7 +4,7 @@ import time
 
 if __name__ == "__main__":
 
-    port = "/dev/cu.usbserial-0001"
+    port = "/dev/ttyUSB0"
     obj = PyLidar3.YdLidarG4(port) #PyLidar3.your_version_of_lidar(port,chunk_size)
     time_duration = 200
 
