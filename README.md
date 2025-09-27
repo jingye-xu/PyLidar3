@@ -16,9 +16,9 @@ Source code is available on github's repository. <br />
 
 ## Installation
 
-##### Using Pip
+##### Using Pip inside the folder to install locally
 ```
-pip install PyLidar3
+pip install .
 ```
 You can also install using setup.py file from git repository.
 
