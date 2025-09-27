@@ -381,9 +381,10 @@ class YdLidarG4(YdLidarX4):
         if(self._is_connected):
             if(self._is_scanning == True):
                 self.StopScanning()
-            if(self.GetLowPowerModeStatus()==False):
-                self.EnableLowPowerMode()
-                sleep(2)
+            # commented out to avoid issues with some devices (newer versions of firmware do not support low power mode)
+            # if(self.GetLowPowerModeStatus()==False):
+            #     self.EnableLowPowerMode()
+            sleep(2)
             self._s.close()
             self._is_connected=False
         else:
